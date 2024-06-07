@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+
+<body>
+
+
+    <button onclick="goBack()">Go Back</button>
+    <button onclick="goForward()">Go Forward</button>
+    <h3></h3>
+
+    <p>Go to page:</p>
+
+    <a href="#" onclick="goPage(-2)">Two pages back</a>
+    <a href="#" onclick="goPage(2)">Two pages forward</a>
+
+
+    <script>
+        // Update history length on page load
+        document.querySelector("h3").innerHTML = "History Length : "+ window.history.length;
+        function goBack() {
+            window.history.back();
+        }
+
+        function goForward() {
+            window.history.forward();
+        }
+
+        function goToPage(n) {
+            window.history.go(n);
+        }
+        document.write("lab 11-g.<br>Binaya Shrestha<br>11-A")
+    </script>
+</body>
+
+</html>

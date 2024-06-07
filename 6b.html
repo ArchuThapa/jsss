@@ -1,0 +1,22 @@
+<html>
+
+<body>
+    <script>
+        const person = {
+            name: 'Binaya',age: 21,
+            greet() {
+                console.log("Name : " + this.name + " Age : " + this.age);
+            }
+        };
+
+        const newPerson = Object.create(person);
+
+        newPerson.name = 'Ram';
+        newPerson.age = 18;
+
+        newPerson.greet();
+        console.log("lab 6-b.\nBinaya Shrestha\n11-A")   
+   </script>
+</body>
+
+</html>

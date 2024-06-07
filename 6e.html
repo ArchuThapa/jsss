@@ -1,0 +1,33 @@
+<html>
+
+<body>
+
+    <script>
+        const myObject = {
+            greeting: "Hi",
+            message: "Hello",
+            myFunction: function () {
+                console.log(this.greeting + " " + this.message);
+            },
+            myNestedObject: {
+                name: "binaya",
+                age: 21,
+
+            },
+            myArray: [1,2,3,4]
+        };
+
+        console.log(myObject.greeting);
+        console.log(myObject.message);
+        myObject.myFunction();
+        console.log(myObject.myNestedObject.name);
+        console.log(myObject.myNestedObject.age);
+        console.log(myObject.myNestedObject.occupation);
+        console.log(myObject.myArray[0]);
+        console.log(myObject.myArray[1]);
+        console.log(myObject.myArray[2]);
+        console.log("lab 6-e.\nBinaya Shrestha\n11-A")
+    </script>
+</body>
+
+</html>
